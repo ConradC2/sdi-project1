@@ -1,6 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import App from './../App';
 
+/****** START OF NAVBAR  TEST   ******/
+
 test('renders Watch This NavBar that has Home text ', () => {
   render(<App />);
   const HomeElement = screen.getByText(/Home/i);
@@ -24,3 +26,6 @@ test('Renders Watch this header text', () => {
   const WatchListElement = screen.getByText(/Watch This/i);
   expect(WatchListElement).toBeInTheDocument();
 });
+
+
+/****** END OF NAVBAR  TEST   ******/
