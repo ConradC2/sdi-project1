@@ -1,4 +1,4 @@
-import TMBD from '../../images';
+import TMBD from '../images';
 
 function About (){
     return (
