@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import {useHistory} from "react-router-dom";
 
 function TopRated() {
 
@@ -6,6 +7,7 @@ function TopRated() {
     const IMGPATH = "https://image.tmdb.org/t/p/w1280"
 
     const [ topRated, setTopRated] = useState([])
+    const history = useHistory();
 
     useEffect(() => {
 
@@ -21,7 +23,7 @@ function TopRated() {
                 return (
                     <div>
                         <h3>{movie.title}</h3>
-                        <img src={`${IMGPATH}/${movie.poster_path}`} />
+                        <img src={`${IMGPATH}/${movie.poster_path}`} onClick={() => {history.push('/individualmovie')}} />
                     </div>
                 )
             })}

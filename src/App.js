@@ -3,7 +3,7 @@ import './App.css';
 import Home from './components/Home';
 import About from './components/About';
 import {Switch, Route, BrowserRouter as Router} from 'react-router-dom';
-
+import IndividualMovie from './components/IndividualMovie';
 
 function App() {
   return (
@@ -14,6 +14,9 @@ function App() {
      </Route>
      <Route exact path="/about">
        <About />
+     </Route>
+     <Route exact path="/individualmovie">
+       <IndividualMovie />
      </Route>
 
     </div>
