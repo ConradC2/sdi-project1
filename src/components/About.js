@@ -1,4 +1,4 @@
-import TMBD from './images';
+import TMBD from '../../images';
 
 function About (){
     return (
@@ -24,7 +24,7 @@ function About (){
             </article>
             <article>
                 <h1>About the The Movie Database (TMBD) API</h1>
-                <img src="./images/TMBD-image.svg" alt="Primary full blue TMDB logo"></img>
+                <img src= '../../images/TMDB-image.svg' alt="Primary full blue TMDB logo"></img>
                 <p>The Movie Database (TMDb) is a community built movie and TV database. Every piece of data has been added by our amazing community dating back to 2008. TMDb's strong international focus and breadth of data is largely unmatched and something we're incredibly proud of. Put simply, we live and breathe community and that's precisely what makes us different.</p>
             </article>
             
