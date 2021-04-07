@@ -5,6 +5,6 @@ import App from './../App';
 
 test('renders Watch This NavBar that has Home text ', () => {
   render(<Footer />);
-  const HomeElement = screen.getByText(//i);
+  const HomeElement = screen.getByText(/Link to The Movie Database/i);
   expect(HomeElement).toBeInTheDocument();
 });
