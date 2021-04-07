@@ -12,7 +12,7 @@ function TopRated() {
         const movieElements = fetch(url)
         .then(response => response.json())
         .then(response => setTopRated(response.results)) 
-    })
+    }, [])
     
     return (
         <section role='ratedGrid'>
