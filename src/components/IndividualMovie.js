@@ -1,4 +1,5 @@
 function IndividualMovie (){
+    
     return(
         <div>
             <header role='TitleHeading'>Movie Title</header>
