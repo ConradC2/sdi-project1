@@ -1,4 +1,8 @@
 import { useEffect, useState } from "react";
+import { useHistory } from 'react-router-dom';
+
+
+
 
 
 function Suggested() {
@@ -7,7 +11,7 @@ function Suggested() {
     const IMGPATH = "https://image.tmdb.org/t/p/w1280"
 
     const [ suggested, setSuggested] = useState([])
-
+    const history = useHistory();
     useEffect(() => {
 
         const movieElements = fetch(url)
@@ -23,7 +27,7 @@ function Suggested() {
                 return (
                     <div>
                         <h3>{movie.title}</h3>
-                        <img src={`${IMGPATH}/${movie.poster_path}`} />
+                        <img src={`${IMGPATH}/${movie.poster_path}`} onClick={() => {history.push('/individualmovie')}} />
                     </div>
                 )
             })}
