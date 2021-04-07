@@ -1,8 +1,10 @@
-import TMBD from '../images';
+import NavBar from './NavBar'
 
 function About (){
     return (
+        
         <div>
+            <NavBar />
             <header>ABOUT THE TEAM</header>
             <article>
                 <h1>04-SDI Student:  Derek Tissaw</h1>
@@ -36,13 +38,9 @@ function About (){
             </article>
             <article>
                 <h1>About the The Movie Database (TMBD) API</h1>
-                <img src={TMBD} alt="Primary full blue TMDB logo" />
-                <p>The Movie Database (TMDb) is a community built movie and TV database. Every piece of 
-                    data has been added by our amazing community dating back to 2008. TMDb's strong 
-                    international focus and breadth of data is largely unmatched and something we're 
-                    incredibly proud of. Put simply, we live and breathe community and that's precisely 
-                    what makes us different.
-                </p>
+                <img src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg" alt="Primary full blue TMDB logo" />
+                <p>The Movie Database (TMDb) is a community built movie and TV database. Every piece of data has been added by our amazing community dating back to 2008. TMDb's strong international focus and breadth of data is largely unmatched and something we're incredibly proud of. Put simply, we live and breathe community and that's precisely what makes us different.</p>
+
             </article>
             
         </div>
