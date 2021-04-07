@@ -10,7 +10,7 @@ const Home = () => {
         <header className="App-header">
             <NavBar/>
         </header>
-        <main> 
+        <main>
             <SearchBar />
             <TopRated />
             <Suggested />
