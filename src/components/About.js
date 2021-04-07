@@ -1,8 +1,10 @@
-
+import NavBar from './NavBar'
 
 function About (){
     return (
+        
         <div>
+            <NavBar />
             <header>ABOUT THE TEAM</header>
             <article>
                 <h1>04-SDI Student:  Derek Tissaw</h1>
