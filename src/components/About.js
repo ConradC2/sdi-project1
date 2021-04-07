@@ -6,7 +6,7 @@ function About (){
             <header>ABOUT THE TEAM</header>
             <article>
                 <h1>04-SDI Student:  Derek Tissaw</h1>
-                <p></p>
+                <p>Derek is a person.</p>
             </article>
             <article>
                 <h1>04-SDI Student: Talmadge Bookert Jr</h1>
@@ -14,7 +14,7 @@ function About (){
             </article>
             <article>
                 <h1>04-SDI Student: Antoine Davis</h1>
-                <p></p>
+                <p>Dolla dolla bills y'all!</p>
             </article>
             <article>
                 <h1>04-SDI Student: Curtis Conrad</h1>
