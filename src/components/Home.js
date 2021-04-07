@@ -2,6 +2,7 @@ import NavBar from './NavBar';
 import SearchBar from './SearchBar';
 import TopRated from './TopRated';
 import Suggested from './Suggested';
+import Footer from './Footer';
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
             <TopRated />
             <Suggested />
         </main>
+        <Footer/>
     </div>
   )
 }
