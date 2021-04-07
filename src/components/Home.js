@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import NavBar from './NavBar';
 import SearchBar from './SearchBar';
 import TopRated from './TopRated';
@@ -21,6 +20,3 @@ const Home = () => {
 
 
 export default Home;
-=======
-rc
->>>>>>> feature/about-component
