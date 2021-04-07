@@ -43,3 +43,25 @@ test('Has a search button', () => {
     const SearchButton = screen.getByRole('button');
     expect(SearchButton).toBeInTheDocument();
 });
+
+//TopRated Section Tests
+test('Renders a "TopRated" section', () => {
+  const TopRatedHeading = screen.getByRole('heading', {name: 'Top Rated'});
+  expect(TopRatedHeading).toBeInTheDocument();
+});
+
+test('Renders section for the Top Rated movie cards', () => {
+  const TopRatedSection = screen.getByRole('ratedGrid');
+  expect(TopRatedSection).toBeInTheDocument();
+});
+
+//Suggested Tests
+test('Renders a "Suggested" section', () => {
+  const SuggestedHeading = screen.getByRole('heading', {name: 'Suggested'});
+  expect(SuggestedHeading).toBeInTheDocument();
+});
+
+test('Renders section for the Suggested movie cards', () => {
+  const SuggestedSection = screen.getByRole('suggestedGrid');
+  expect(SuggestedSection).toBeInTheDocument();
+});
