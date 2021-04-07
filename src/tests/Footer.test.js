@@ -4,7 +4,7 @@ import App from './../App';
 
 
 test('Renders a footer with the text "Link to the Movie Database" ', () => {
-  render(<Footer />);
+  render(<App />);
   const HomeElement = screen.getByText(/Link to The Movie Database/i);
   expect(HomeElement).toBeInTheDocument();
 });
