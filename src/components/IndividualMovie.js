@@ -27,15 +27,19 @@ function IndividualMovie() {
         <div>
             <NavBar/>            
             <header role='TitleHeading'><h2>{currentDetails.title}</h2></header>
-            <img src={`${IMGPATH}/${photo}`}/>
+            <img src={`${IMGPATH}/${currentDetails.poster_path}`} alt="movie poster" style={{'maxHeight': '200px'}}/>
             <article>
                 <p>{currentDetails.overview}</p>
+                <h3>popularity</h3>
                 <p>{currentDetails.popularity}</p>
+                <h3>genre</h3>
                 <p>{currentDetails.genres === undefined ? 'loading...' : currentDetails.genres.map(genre => `${genre.name} `)}</p>
+                <h3>release Date:</h3>
                 <p>{currentDetails.release_date}</p>
-                <p>{currentDetails.revenue}</p>
-                <p>{currentDetails.runtime}</p>
-                <ul>Cast (Top 5)</ul>
+                <h3>revenue</h3>
+                <p>${currentDetails.revenue}</p>
+                <h3>runtime</h3>
+                <p>{currentDetails.runtime} mins</p>
             </article>
             <button>Add to WatchList</button>
         </div>

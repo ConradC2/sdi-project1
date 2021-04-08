@@ -10,7 +10,7 @@ function MovieCard ({title, photo, movieId}){
     return (
         <div>
             <h3>{title}</h3>
-            <img src={`${IMGPATH}/${photo}`} onClick={() => {
+            <img src={`${IMGPATH}/${photo}`} alt="movie poster" style={{'maxHeight': '200px'}} onClick={() => {
               history.push(`/individualmovie/${title}`)
               updateSelectedMovie({movieTitle: title, id: movieId });
             }} />
