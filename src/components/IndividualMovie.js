@@ -6,7 +6,8 @@ function IndividualMovie() {
 
     
     const IMGPATH = "https://image.tmdb.org/t/p/w1280"
-    const url = `https://api.themoviedb.org/3/movie/${movie_id}?api_key=f9a1ac0ab4f944bb3c103d5dc0e9fc4d&language=en-US`;
+   // const url = `https://api.themoviedb.org/3/movie/${movie_id}?api_key=f9a1ac0ab4f944bb3c103d5dc0e9fc4d&language=en-US`;
+   const url = `https://api.themoviedb.org/3/movie/2?api_key=f9a1ac0ab4f944bb3c103d5dc0e9fc4d&language=en-US`;
 
     const [currentDetails, updateDetails] = useState ({})
 
