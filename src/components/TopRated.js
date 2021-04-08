@@ -20,7 +20,7 @@ function TopRated() {
             <h2>Top Rated</h2>
             {topRated.map((movie) => {
                 return (
-                    <MovieCard title= {movie.title} photo={movie.poster_path} movieId={movie.id}/>
+                    <MovieCard title= {movie.title} photo={movie.poster_path} movieId={movie.id} />
                 )
             })}
         </section>

@@ -14,7 +14,7 @@ function SearchResults({search}) {
                 <h2>Search Results</h2>
                 {search.searchResults.map((movie) => {
                     return (
-                        <MovieCard title= {movie.title} photo={movie.poster_path} movieId={movie.id}/>
+                        <MovieCard title= {movie.title} photo={movie.poster_path} movieId={movie.id} />
                     )
                 })}
             </section>

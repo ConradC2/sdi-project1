@@ -1,12 +1,14 @@
 import NavBar from './NavBar';
 import {useEffect, useState, useContext} from 'react';
 import SelectedMovieContext from './SelectedMovieContext';
+import Footer from './Footer';
+import { useHistory } from 'react-router';
 
-
-function IndividualMovie() {
-
+function IndividualMovie({watch}) {
+    console.log(watch);
     const selected = useContext (SelectedMovieContext);
-    const movie_id = selected.selectedMovie.id
+    const movie_id = selected.selectedMovie.id;
+    const history = useHistory();
 
     const IMGPATH = "https://image.tmdb.org/t/p/w1280"
    const url = `https://api.themoviedb.org/3/movie/${movie_id}?api_key=f9a1ac0ab4f944bb3c103d5dc0e9fc4d&language=en-US`;
@@ -41,7 +43,8 @@ function IndividualMovie() {
                 <h3>runtime</h3>
                 <p>{currentDetails.runtime} mins</p>
             </article>
-            <button>Add to WatchList</button>
+            <button onClick={() => {watch.setWatchList([...watch.watchList, currentDetails])} }>Add to WatchList</button>
+            <Footer/>
         </div>
     )
 }
