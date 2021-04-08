@@ -1,5 +1,6 @@
 import './App.css';
 import Home from './components/Home';
+import WatchList from './components/WatchList';
 import About from './components/About';
 import {Route, BrowserRouter as Router} from 'react-router-dom';
 import IndividualMovie from './components/IndividualMovie';
@@ -21,6 +22,9 @@ function App() {
         <div className="App">
         <Route exact path="/">
           <Home search={search}/>
+        </Route>
+        <Route  path="/watchlist">
+          <WatchList/>
         </Route>
         <Route exact path="/about">
           <About />
