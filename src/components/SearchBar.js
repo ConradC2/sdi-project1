@@ -2,7 +2,7 @@ import { useState, useEffect} from 'react';
 import {useHistory} from "react-router-dom";
 
 
-function SearchBar() {
+function SearchBar({search}) {
     
     const [searchInput, setSearchInput] = useState("");
     const [searchURL, setSearchURL] = useState("https://api.themoviedb.org/3/search/movie?api_key=f9a1ac0ab4f944bb3c103d5dc0e9fc4d&language=en-US&query=Spirited%20Away&page=1&include_adult=false")
@@ -21,7 +21,7 @@ function SearchBar() {
     useEffect(() => {
         const searchElements = fetch(searchURL)
         .then(response => response.json())
-        .then(response => console.log(response.results))
+        .then(response => search.setSearchResults(response.results))
     }, [searchURL])
 
     return (
