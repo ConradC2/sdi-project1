@@ -4,8 +4,8 @@ import SelectedMovieContext from './SelectedMovieContext';
 import Footer from './Footer';
 import { useHistory } from 'react-router';
 
-function IndividualMovie() {
-
+function IndividualMovie({watch}) {
+    console.log(watch);
     const selected = useContext (SelectedMovieContext);
     const movie_id = selected.selectedMovie.id;
     const history = useHistory();
@@ -43,7 +43,7 @@ function IndividualMovie() {
                 <h3>runtime</h3>
                 <p>{currentDetails.runtime} mins</p>
             </article>
-            <button onClick={() => {history.push(`/WatchList`)} }>Add to WatchList</button>
+            <button onClick={() => {watch.setWatchList([...watch.watchList, currentDetails])} }>Add to WatchList</button>
             <Footer/>
         </div>
     )

@@ -4,7 +4,7 @@ import TopRated from './TopRated';
 import Suggested from './Suggested';
 import Footer from './Footer';
 
-const Home = ({search}) => {
+const Home = ({search, watch}) => {
   
   return (
     <div>
@@ -13,8 +13,8 @@ const Home = ({search}) => {
         </header>
         <main>
             <SearchBar search={search}/>
-            <TopRated />
-            <Suggested />
+            <TopRated watch={watch} />
+            <Suggested watch={watch}/>
         </main>
         <Footer/>
     </div>

@@ -5,7 +5,7 @@ import About from './components/About';
 import {Route, BrowserRouter as Router} from 'react-router-dom';
 import IndividualMovie from './components/IndividualMovie';
 import SearchResults from './components/SearchResults';
-
+    
 import SelectedMovieContext from './components/SelectedMovieContext';
 import { useState } from 'react';
 
@@ -13,8 +13,10 @@ import { useState } from 'react';
 function App() {
   const [ selectedMovie, updateSelectedMovie ] = useState({});
   const [ searchResults, setSearchResults ] = useState([]);
+  const [ watchList, setWatchList ] = useState([]);
   const selected = { selectedMovie, updateSelectedMovie };
   const search = {searchResults, setSearchResults};
+  const watch = {watchList, setWatchList}
 
   return (
     <Router>
@@ -24,16 +26,16 @@ function App() {
           <Home search={search}/>
         </Route>
         <Route  path="/watchlist">
-          <WatchList/>
+          <WatchList  watch={watch}/>
         </Route>
         <Route exact path="/about">
           <About />
         </Route>
         <Route path="/individualmovie">
-          <IndividualMovie />
+          <IndividualMovie  watch={watch} />
         </Route>
         <Route path="/searchresults">
-          <SearchResults search={search}/>
+          <SearchResults search={search} />
         </Route>
         </div>
       </SelectedMovieContext.Provider>
