@@ -1,0 +1,17 @@
+.suggested {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr, repeat(4, 3fr);
+    margin: 5px;
+    gap: 3px;
+    padding: 10px;
+  
+  
+  }
+  
+  .heading{
+    font-size: 40px;
+    grid-column: 1/ span 6;
+    align-self: center;
+    justify-self: center;
+  }

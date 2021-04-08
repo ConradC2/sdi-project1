@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import MovieCard from './MovieCard';
+import styles from '../css/TopRated.module.css'
 
 function TopRated() {
 
@@ -16,8 +17,8 @@ function TopRated() {
     }, [])
     
     return (
-        <section role='ratedGrid'>
-            <h2>Top Rated</h2>
+        <section role='ratedGrid' className={styles.topRated}>
+            <h2 className={styles.heading}>Top Rated</h2>
             {topRated.map((movie) => {
                 return (
                     <MovieCard title= {movie.title} photo={movie.poster_path} movieId={movie.id} />

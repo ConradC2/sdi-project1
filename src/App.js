@@ -1,11 +1,9 @@
-import './App.css';
 import Home from './components/Home';
 import WatchList from './components/WatchList';
 import About from './components/About';
 import {Route, BrowserRouter as Router} from 'react-router-dom';
 import IndividualMovie from './components/IndividualMovie';
 import SearchResults from './components/SearchResults';
-    
 import SelectedMovieContext from './components/SelectedMovieContext';
 import { useState } from 'react';
 

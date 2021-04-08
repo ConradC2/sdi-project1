@@ -1,5 +1,6 @@
 import { useState, useEffect} from 'react';
 import {useHistory} from "react-router-dom";
+import styles from '../css/SearchBar.module.css';
 
 
 function SearchBar({search}) {
@@ -25,12 +26,12 @@ function SearchBar({search}) {
     }, [searchURL])
 
     return (
-        <div className="searchBar">
-                <input type='text' placeholder='Search by Title'
+        <div className={styles.searchBar}>
+                <input class={styles.inputBox} type='text' placeholder='Search by Title'
                     //value={searchInput}
                     onChange={onInputChange}>
                 </input>
-                <button type='submit' onClick={onSearchSubmit}>Search</button>
+                <button class={styles.buttonBox} type='submit' onClick={onSearchSubmit}>Search</button>
         </div>
     )
 }
