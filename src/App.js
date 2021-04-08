@@ -7,11 +7,11 @@ import SelectedMovieContext from './components/SelectedMovieContext';
 import { useState } from 'react';
 
 function App() {
-  const [selectedMovie, updateSelectedMovie] = useState ({})
-  const selected = {selectedMovie, updateSelectedMovie}
+  const [ selectedMovie, updateSelectedMovie ] = useState({});
+  const selected = { selectedMovie, updateSelectedMovie };
   return (
     <Router>
-      <SelectedMovieContext.Provider value= {selected} >
+      <SelectedMovieContext.Provider value={selected}>
         <div className="App">
         <Route exact path="/">
           <Home />
