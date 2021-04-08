@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import MovieCard from './MovieCard';
+import styles from '../css/Suggested.module.css';
 
 
 
@@ -18,8 +19,8 @@ function Suggested() {
     }, []) 
 
     return (
-        <section role='suggestedGrid'>
-            <h2>Suggested</h2>
+        <section role='suggestedGrid' className={styles.suggested}>
+            <h2 className={styles.heading}>Suggested</h2>
 
             {suggested.map((movie) => {
                 return (

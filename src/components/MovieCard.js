@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import {useHistory} from "react-router-dom";
 import SelectedMovieContext from './SelectedMovieContext';
+import styles from '../css/MovieCard.module.css';
 
 function MovieCard ({title, photo, movieId}){
 
@@ -9,9 +10,9 @@ function MovieCard ({title, photo, movieId}){
     const {selectedMovie, updateSelectedMovie}= useContext (SelectedMovieContext);
     const {watch, addWatch}= useContext
     return (
-        <div>
+        <div className={styles.moviecard}>
             <h3>{title}</h3>
-            <img src={`${IMGPATH}/${photo}`} alt="movie poster" style={{'maxHeight': '200px'}} onClick={() => {
+            <img src={`${IMGPATH}/${photo}`} alt="movie poster" onClick={() => {
               history.push(`/individualmovie/${title}`)
               updateSelectedMovie({movieTitle: title, id: movieId });
 

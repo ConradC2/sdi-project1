@@ -1,0 +1,15 @@
+.moviecard {
+border-radius: 5px;
+-webkit-box-shadow: 5px 5px 15px 5px #727272; 
+box-shadow: 5px 5px 15px 5px #727272;
+justify-self: center;
+align-content: center;
+padding: 3px;
+width: 175px;
+
+}
+
+img {
+    width: 160px;
+    height: 250px;
+}
