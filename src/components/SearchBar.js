@@ -5,7 +5,7 @@ import {useHistory} from "react-router-dom";
 function SearchBar({search}) {
     
     const [searchInput, setSearchInput] = useState("");
-    const [searchURL, setSearchURL] = useState("https://api.themoviedb.org/3/search/movie?api_key=f9a1ac0ab4f944bb3c103d5dc0e9fc4d&language=en-US&query=Spirited%20Away&page=1&include_adult=false")
+    const [searchURL, setSearchURL] = useState("")
     const history = useHistory();
 
     const onInputChange = event => {
@@ -15,7 +15,7 @@ function SearchBar({search}) {
     const onSearchSubmit = event => {
         const searchEncoded = encodeURIComponent(searchInput.title);
         setSearchURL(`https://api.themoviedb.org/3/search/movie?api_key=f9a1ac0ab4f944bb3c103d5dc0e9fc4d&language=en-US&query=${searchEncoded}&page=1&include_adult=false`);
-        history.push('/searchresults')
+        setTimeout(() => {history.push('/searchresults');}, 400)
     };
     
     useEffect(() => {
