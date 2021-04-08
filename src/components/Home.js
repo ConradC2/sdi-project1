@@ -4,14 +4,15 @@ import TopRated from './TopRated';
 import Suggested from './Suggested';
 import Footer from './Footer';
 
-const Home = () => {
+const Home = ({search}) => {
+  
   return (
     <div>
         <header className="App-header">
             <NavBar/>
         </header>
         <main>
-            <SearchBar />
+            <SearchBar search={search}/>
             <TopRated />
             <Suggested />
         </main>
