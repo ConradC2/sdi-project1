@@ -33,39 +33,29 @@ function IndividualMovie({watch}) {
             <section className={styles.indivMovieSection}>
                 <img className={styles.indivMovieImg} src={`${IMGPATH}/${currentDetails.poster_path}`} alt="movie poster" />
                 <article className={styles.contentSection}>
-                    <p className={styles.movieContent}>
-                        {currentDetails.overview}
-                    </p>
-                    <h3 className={styles.movieHeading}>
+                    <p>{currentDetails.overview}</p>
+                    <h3>
                         Popularity:
                     </h3>
-                        <p className={styles.movieContent}>
-                            {currentDetails.popularity}
-                        </p>
-                    <h3 className={styles.movieHeading}>
+                        <p>{currentDetails.popularity}</p>
+                    <h3 c>
                         Genre:
                     </h3>
-                        <p className={styles.movieContent}>
+                        <p>
                             {currentDetails.genres === undefined ? 'loading...' : currentDetails.genres.map(genre => `${genre.name} `)}
                         </p>
-                    <h3 className={styles.movieHeading}>
+                    <h3>
                         Release Date:
                     </h3>
-                        <p className={styles.movieContent}>
-                            {currentDetails.release_date}
-                        </p>
-                    <h3 className={styles.movieHeading}>
+                        <p >{currentDetails.release_date}</p>
+                    <h3>
                         Revenue:
                     </h3>
-                        <p className={styles.movieContent}>
-                            ${currentDetails.revenue}
-                        </p>
-                    <h3 className={styles.movieHeading}>
+                        <p className={styles.movieContent}>${currentDetails.revenue}</p>
+                    <h3>
                         Runtime:
                     </h3>
-                    <p className={styles.movieContent}>
-                        {currentDetails.runtime} mins
-                    </p>
+                    <p>{currentDetails.runtime} mins</p>
                 </article>
             </section>
             <button className={styles.indivMovieButton} onClick={() => {watch.setWatchList([...watch.watchList, currentDetails]); alert(`Added ${currentDetails.title} to watchlist`)} }>Add to WatchList</button>

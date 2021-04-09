@@ -1,7 +1,12 @@
 .indivMovieSection {
     display: grid;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgba(36,36,143,1) 82%);
+    border-width: 5px;
+    border-radius: 25px;
+    margin: 30px;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 600px;
+    grid-template-rows: 700px;
 }
 
 .indivMovieHeading {
@@ -16,19 +21,14 @@
     height: 500px;
     justify-self: center;
     align-self: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .contentSection {
-
-}
-
-.mmovieHeading {
-
-}
-
-.movieContent {
-
+    border-radius: 25px;
+    background-color: white;
+    margin: 15px;
+    padding: 15px;
 }
 
 .indivMovieButton {
