@@ -1,5 +1,6 @@
 .mainBody {
-    background-color: black;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgba(36,36,143,1) 82%);
     border-width: 5px;
     border-radius: 25px;
     margin: 30px;

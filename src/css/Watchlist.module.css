@@ -1,0 +1,26 @@
+.watchList {
+    display: grid;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgba(36,36,143,1) 82%);
+    border-width: 5px;
+    border-radius: 25px;
+    margin: 30px;
+    gap: 3px;
+    padding: 0px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr, repeat(4, 3fr);
+}
+
+.watchListHeading {
+    font-size: 75px;
+    width: 100%;
+    color: black;
+    background-color: white;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    margin-bottom: 75px;
+    grid-column: 1/ span 6;
+}

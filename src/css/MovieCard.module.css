@@ -3,6 +3,8 @@
     background-color: white;
     padding: 5px;
     width: 175px;
+    /* min-width: 0;
+    overflow: auto; */
     margin: 40px 20px;
     -webkit-box-shadow: 5px 5px 15px 5px #555454; 
     box-shadow: 5px 5px 15px 5px #555454;
@@ -13,13 +15,14 @@
 
 .movieCard:hover {
     transform: scale(1.25);
+    cursor: pointer;
 }
 
-h3 {
+.movieCardHeading {
     text-align: center;
 }
 
-img {
+.movieCardImg {
     width: 160px;
     height: 250px;
     margin: 5px;

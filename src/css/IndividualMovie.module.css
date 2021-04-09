@@ -1,0 +1,48 @@
+.indivMovieSection {
+    display: grid;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgba(36,36,143,1) 82%);
+    border-width: 5px;
+    border-radius: 25px;
+    margin: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 700px;
+}
+
+.indivMovieHeading {
+    font-size: 75px;
+    text-align: center;
+}
+
+.indivMovieImg {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    width: 350px;
+    height: 500px;
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 30px;
+}
+
+.contentSection {
+    border-radius: 25px;
+    background-color: white;
+    margin: 15px;
+    padding: 15px;
+}
+
+.indivMovieButton {
+    font-size: 20px;
+    margin: 15px;
+    position: relative;
+    right: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.indivMovieButton:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}

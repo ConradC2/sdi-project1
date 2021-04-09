@@ -1,0 +1,57 @@
+.container {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-row: 1fr, 1fr;;
+    grid-column-gap: 300px;
+    justify-content: center;
+    grid-row-gap: 0px;
+    margin: 0px;
+    /* gap: 3px; */
+    padding: 0px;
+
+}
+
+.header {
+
+    padding: 0px;
+    color: black;
+    text-align: center;
+    font-style: italic;
+    font-size: 60px;
+    margin: 0px;
+
+}
+
+.student {
+    color: black;
+    font-size: 30px;
+    border-bottom: solid 2px;
+}
+
+
+.info { 
+        color: black;
+        text-indent: 30px;
+        align-content: center;
+
+}
+
+.article {
+    border-radius: 5px;
+    background-color: white;
+    padding: 5px;
+    width: 400px;
+    height: auto;
+    margin: 40px 20px;
+    -webkit-box-shadow: 5px 5px 15px 5px #555454; 
+    box-shadow: 5px 5px 15px 5px #555454;
+    justify-self: center;
+    align-content: center;
+    transition: .2s;
+
+}
+
+
+.article:hover {
+    transform: scale(1.25);
+}
