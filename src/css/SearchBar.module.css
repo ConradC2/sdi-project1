@@ -1,18 +1,18 @@
 .searchBar {
     text-align: center;
-    margin: 30px;
+    /* margin: 30px; */
 }
 
 .inputBox {
     min-width: 250px;
     min-height: 30px;
     font-size: 20px;
-    margin-right: 5px;
+    margin: 85px 5px 30px;
 }
 
 .buttonBox {
     min-width: 50px;
     min-height: 36px;
     font-size: 20px;
-    margin-left: 5px;
+    margin: 85px 5px 30px;
 }

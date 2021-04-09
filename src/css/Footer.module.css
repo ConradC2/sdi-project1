@@ -1,0 +1,16 @@
+.footer {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer > a > img {
+    height: 150px;
+    transition: .2s;
+}
+
+.footer > a > img:hover {
+    transform: scale(1.3);
+}
