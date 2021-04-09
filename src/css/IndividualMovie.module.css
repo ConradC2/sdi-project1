@@ -1,0 +1,48 @@
+.indivMovieSection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 600px;
+}
+
+.indivMovieHeading {
+    font-size: 75px;
+    text-align: center;
+}
+
+.indivMovieImg {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    width: 350px;
+    height: 500px;
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 50px;
+}
+
+.contentSection {
+
+}
+
+.mmovieHeading {
+
+}
+
+.movieContent {
+
+}
+
+.indivMovieButton {
+    font-size: 20px;
+    margin: 15px;
+    position: relative;
+    right: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.indivMovieButton:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
