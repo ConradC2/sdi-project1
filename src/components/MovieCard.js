@@ -10,7 +10,7 @@ function MovieCard ({title, photo, movieId}){
     const {selectedMovie, updateSelectedMovie}= useContext (SelectedMovieContext);
     const {watch, addWatch}= useContext
     return (
-        <div className={styles.moviecard}>
+        <div className={styles.movieCard}>
             <h3>{title}</h3>
             <img src={`${IMGPATH}/${photo}`} alt="movie poster" onClick={() => {
               history.push(`/individualmovie/${title}`)

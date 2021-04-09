@@ -1,17 +1,22 @@
 .topRated {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 1fr, repeat(4, 3fr);
-  margin: 5px;
+  margin: 0px;
   gap: 3px;
-  padding: 10px;
-
-
+  padding: 0px;
 }
 
 .heading{
-  font-size: 40px;
-  grid-column: 1/ span 6;
+  font-size: 75px;
+  width: 100%;
+  background-color: white;
   align-self: center;
   justify-self: center;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 25px;
+  margin-bottom: 75px;
+  grid-column: 1/ span 6;
+  
 }

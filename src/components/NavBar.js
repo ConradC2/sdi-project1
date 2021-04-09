@@ -4,7 +4,7 @@ import styles from '../css/NavBar.module.css';
 function NavBar() {
 
     return(
-        <div className={styles.navbarheader}>
+        <div className={styles.navBarHeader}>
          <h1 className={styles.h1}>Watch This</h1>
          <nav className={styles.nav}>
           <ul>

@@ -1,15 +1,27 @@
-.moviecard {
-border-radius: 5px;
--webkit-box-shadow: 5px 5px 15px 5px #727272; 
-box-shadow: 5px 5px 15px 5px #727272;
-justify-self: center;
-align-content: center;
-padding: 3px;
-width: 175px;
+.movieCard {
+    border-radius: 5px;
+    background-color: white;
+    padding: 5px;
+    width: 175px;
+    margin: 40px 20px;
+    -webkit-box-shadow: 5px 5px 15px 5px #555454; 
+    box-shadow: 5px 5px 15px 5px #555454;
+    justify-self: center;
+    align-content: center;
+    transition: .2s;
+}
 
+.movieCard:hover {
+    transform: scale(1.25);
+}
+
+h3 {
+    text-align: center;
 }
 
 img {
     width: 160px;
     height: 250px;
+    margin: 5px;
+    border-radius: 10px 5px;
 }
